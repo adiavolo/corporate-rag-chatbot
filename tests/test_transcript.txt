@@ -1,0 +1,286 @@
+TEST TRANSCRIPT - 2026-01-12 16:49:38.922721
+==================================================
+
+TAG: HR
+Q:   What is the probation period for new employees?
+A:   According to the context, the probation period for new employees is 3 months, unless otherwise specified in the offer letter. (Page 4)
+
+I don't have enough information to provide the specific probation period for confirmed employees, senior management, or interns.
+RES: Refused (Bot returned 'Not enough info')
+----------------------------------------
+TAG: HR
+Q:   How many days of annual leave do full-time employees get?
+A:   According to page 7 of the HR Policy Document, full-time employees are entitled to 24 days of paid annual leave per calendar year.
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: HR
+Q:   What is the notice period for a confirmed employee?
+A:   According to the context, the notice period for a confirmed employee is 30 days. (Page 4.4)
+
+I found this information on page 4 of the HR Policy Document.
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: HR
+Q:   How is maternity leave handled?
+A:   According to the HR Policy Document.pdf, female employees are entitled to 26 weeks of paid maternity leave in accordance with applicable labor laws. This leave is available for the first two children and must be applied for at least 8 weeks before the expected delivery date.
+
+Page 8 of the document.
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: HR
+Q:   Who approves leave requests?
+A:   I don't have enough information.
+RES: Refused (Bot returned 'Not enough info')
+----------------------------------------
+TAG: HR
+Q:   How are working hours tracked?
+A:   According to Section 5.6 Timesheets and Tracking, all employees must: Record working hours, Submit timesheets as required, and Ensure accuracy of reported time.
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: HR
+Q:   What happens after probation?
+A:   According to the HR Policy Document, after the probation period, the employee will receive written confirmation of permanent employment (Page 4).
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: HR
+Q:   What is bereavement leave?
+A:   According to the context, bereavement leave is 5 working days of paid leave in the event of the death of an immediate family member. (Page 6.6)
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: HR
+Q:   What is the payroll cycle?
+A:   According to Section 7.2 of the HR Policy Document, salaries are paid monthly on the 30th of each month via direct bank transfer. If the 30th falls on a holiday, payment is made on the preceding working day.
+
+[HR Policy Document.pdf Page 9]
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: HR
+Q:   What happens during exit and offboarding?
+A:   According to the context, during exit and offboarding, employees must:
+
+* Submit a written resignation to HR and their manager in accordance with the notice period (14.1 Resignation Process)
+* Participate in an exit interview to provide feedback on their experience (14.2 Exit Interviews)
+* Return all company property before the last working day, including:
+	+ Laptops
+	+ ID cards
+	+ Access badges
+	+ Documents (14.3 Asset Return)
+
+I found this information on Pages 14.1, 14.2, and 14.3.
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: Legal
+Q:   What is a legal hold?
+A:   A legal hold is an instruction issued by the Legal Department requiring certain information to be preserved for legal, regulatory, or investigative purposes. (Page 9)
+
+Alternatively, a legal hold is defined as a requirement to preserve data for legal purposes. (Appendix A — Definitions, Term: Legal Hold, Page 4)
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: Legal
+Q:   Who is allowed to sign contracts?
+A:   According to the context, the following individuals are authorized to sign contracts on behalf of Aurora Systems Pvt. Ltd.:
+
+1. Chief Executive Officer (CEO)
+2. Chief Financial Officer (CFO)
+3. Head of Legal
+4. Any individual explicitly delegated in writing by the Executive Management Committee
+
+(Found on Page 6 of the Legal Compliance Policy.pdf)
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: Legal
+Q:   What happens if someone violates an NDA?
+A:   According to the context, if someone violates an NDA, it may result in:
+
+* Legal action (Page 6)
+* Personal liability (Page 6)
+* Financial penalties (Page 6)
+* Termination of employment or contract (Page 6)
+
+Additionally, obstructing, misleading, or interfering with an investigation may also result in termination and legal penalties (Page 9).
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: Legal
+Q:   How should legal disputes be handled?
+A:   According to the context, legal disputes should be handled by the Legal Department, and only they may manage legal disputes. (Page 10 and Page 6.2)
+
+Additionally, disputes may be resolved through arbitration, mediation, or settlement negotiations, where permitted by law. (Page 6.2)
+
+It's also mentioned that employees are required to participate in dispute resolution processes when instructed, but it's not clear if they are also responsible for handling the dispute.
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: Legal
+Q:   What is document retention?
+A:   Document retention refers to the requirement to maintain records for legally required periods, as stated in Section 8.1 of the Legal Compliance Policy.
+RES: Partial/Vague (Missing expected key concepts)
+----------------------------------------
+TAG: Legal
+Q:   What happens if records are destroyed under a legal hold?
+A:   According to page 9 of the Legal Compliance Policy, "Failure to comply with a legal hold is considered a serious offense." Additionally, on page 12, it is stated that "Unauthorized destruction of records is a legal violation."
+
+It can be inferred that if records are destroyed under a legal hold, it is a serious policy violation and a legal violation.
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: Legal
+Q:   Who handles lawsuits?
+A:   According to the context, it is stated on Page 10 of the [Legal Compliance Policy.pdf] that "All legal claims, lawsuits, or threats of legal action must be immediately reported to the Legal Department."
+
+Additionally, on Page 10, it is also stated that "Only Legal may manage legal disputes."
+
+Therefore, the answer is: The Legal Department.
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: Legal
+Q:   How do you report legal violations?
+A:   According to the context, you can report legal violations through the following channels:
+
+* Human Resources
+* Legal Department
+* Internal Compliance Portal
+* Anonymous Whistleblower Hotline
+
+Page 7.1 of the Legal Compliance Policy states: "Employees, contractors, and vendors are required to report any suspected: legal or ethical violations..."
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: Legal
+Q:   What are whistleblower protections?
+A:   According to the context, whistleblower protections are not explicitly stated as a separate section. However, Section 7.1 "Reporting Legal or Ethical Violations" mentions that employees, contractors, and vendors are required to report any suspected illegal activity, fraud, or other violations.
+
+It appears that the context does not provide a clear definition of whistleblower protections as a specific section or policy. However, it does mention that reporting concerns in good faith will not result in retaliation (Section 7.2 Protection Against Retaliation).
+
+I don't have enough information to provide a clear answer to the question "What are whistleblower protections?" as it is not explicitly stated in the provided context.
+RES: Refused (Bot returned 'Not enough info')
+----------------------------------------
+TAG: Legal
+Q:   What happens to intellectual property after leaving the company?
+A:   After leaving the company, individuals must: Continue to respect all confidentiality and IP obligations, not use or disclose proprietary knowledge gained during employment, not represent company work as their own, and return all materials, code, and documentation. (Page 8 of the Legal Compliance Policy)
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: HR
+Q:   What happens when I leave the company?
+A:   According to the context, when you leave the company, you must return company property, complete handover of duties, and attend an exit interview (where applicable). Final settlement is processed within 30 days of the last working day. (Page 5 and 19)
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: Legal
+Q:   What happens when I leave the company?
+A:   According to the context, when you leave the company, you must:
+
+* Continue to respect all confidentiality and IP obligations (Page 8)
+* Not use or disclose proprietary knowledge gained during employment (Page 8)
+* Not represent company work as your own (Page 8)
+* Return all materials, code, and documentation (Page 8)
+
+Additionally, company intellectual property must not be uploaded to public repositories, personal storage, or third-party platforms without written approval (Page 8).
+
+I don't have enough information to provide further details on what happens when you leave the company, such as any potential consequences for violating post-employment IP restrictions.
+RES: Refused (Bot returned 'Not enough info')
+----------------------------------------
+TAG: HR
+Q:   Confidential information
+A:   According to Section 9.2 of the document, Confidential information includes, but is not limited to:
+
+● Business plans
+● Technical designs
+● Client contracts
+● Employee records
+● Source code
+
+[HR Policy Document.pdf Page 13]
+RES: Partial/Vague (Missing expected key concepts)
+----------------------------------------
+TAG: Legal
+Q:   Confidential information
+A:   Confidential information includes any non-public company data. (Appendix A — Definitions, Term: Confidential Information, Page 13)
+RES: Partial/Vague (Missing expected key concepts)
+----------------------------------------
+TAG: HR
+Q:   Agreements
+A:   I don't have enough information.
+RES: Refused (Bot returned 'Not enough info')
+----------------------------------------
+TAG: Legal
+Q:   Agreements
+A:   According to the context provided, agreements can expose individuals to personal liability, financial penalties, legal action, and termination of employment or contract.
+RES: Partial/Vague (Missing expected key concepts)
+----------------------------------------
+TAG: HR
+Q:   Disciplinary actions
+A:   According to the context, disciplinary actions may result in:
+
+* Verbal warning
+* Written warning
+* Suspension
+* Termination of employment
+
+This information is found on Page 12 of the HR Policy Document.
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: Legal
+Q:   Disciplinary actions
+A:   According to the context, disciplinary actions may result from policy violations, specifically:
+
+● Disciplinary action
+
+Page 12 of the Legal Compliance Policy.pdf.
+RES: Correct (Found expected concepts)
+----------------------------------------
+TAG: HR
+Q:   Data misuse
+A:   Data misuse includes personal employee data, client information, financial records, and intellectual property. (Page 9.1)
+RES: Partial/Vague (Missing expected key concepts)
+----------------------------------------
+TAG: Legal
+Q:   Data misuse
+A:   I don't have enough information.
+RES: Refused (Bot returned 'Not enough info')
+----------------------------------------
+TAG: HR
+Q:   What stock options do employees get?
+A:   I don't have enough information. The provided context does not mention stock options.
+RES: Correct (Refused as expected)
+----------------------------------------
+TAG: Legal
+Q:   What stock options do employees get?
+A:   I don't have enough information. The provided context does not mention stock options.
+RES: Correct (Refused as expected)
+----------------------------------------
+TAG: HR
+Q:   Who is the CEO?
+A:   I don't have enough information.
+RES: Correct (Refused as expected)
+----------------------------------------
+TAG: Legal
+Q:   Who is the CEO?
+A:   The Chief Executive Officer (CEO) is one of the individuals authorized to sign contracts on behalf of Aurora Systems Pvt. Ltd. (Page 3.4, Contract Signing Authority).
+RES: Fail: Hallucinated (Generated answer: The Chief Executive Officer (C...)
+----------------------------------------
+TAG: HR
+Q:   What is the companyâ€™s revenue?
+A:   I don't have enough information.
+RES: Correct (Refused as expected)
+----------------------------------------
+TAG: Legal
+Q:   What is the companyâ€™s revenue?
+A:   I don't have enough information. The context only mentions the company's intellectual property, including software code, product designs, and research data, but it does not provide any information about the company's revenue.
+RES: Correct (Refused as expected)
+----------------------------------------
+TAG: HR
+Q:   What cloud provider does Aurora use?
+A:   I don't have enough information.
+RES: Correct (Refused as expected)
+----------------------------------------
+TAG: Legal
+Q:   What cloud provider does Aurora use?
+A:   I don't have enough information.
+RES: Correct (Refused as expected)
+----------------------------------------
+TAG: HR
+Q:   What programming languages does the company use?
+A:   I don't have enough information.
+RES: Correct (Refused as expected)
+----------------------------------------
+TAG: Legal
+Q:   What programming languages does the company use?
+A:   I don't have enough information. The context only mentions "Software code, scripts, and algorithms" as examples of company property, but it does not specify the programming languages used by the company.
+RES: Correct (Refused as expected)
+----------------------------------------

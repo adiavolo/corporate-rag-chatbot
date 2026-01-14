@@ -1,0 +1,250 @@
+{
+  "group_a": [
+    {
+      "id": "A1",
+      "question": "What is the probation period for new employees?",
+      "tag": "HR",
+      "expected_concepts": ["3 months", "probation"],
+      "forbidden_concepts": ["legal hold", "lawsuit", "contract signing"]
+    },
+    {
+      "id": "A2",
+      "question": "How many days of annual leave do full-time employees get?",
+      "tag": "HR",
+      "expected_concepts": ["24 days", "leave"],
+      "forbidden_concepts": ["litigation", "court"]
+    },
+    {
+      "id": "A3",
+      "question": "What is the notice period for a confirmed employee?",
+      "tag": "HR",
+      "expected_concepts": ["30 days", "notice"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "A4",
+      "question": "How is maternity leave handled?",
+      "tag": "HR",
+      "expected_concepts": ["26 weeks", "maternity", "child"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "A5",
+      "question": "Who approves leave requests?",
+      "tag": "HR",
+      "expected_concepts": ["reporting manager", "manager", "HR"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "A6",
+      "question": "How are working hours tracked?",
+      "tag": "HR",
+      "expected_concepts": ["timesheets", "9:00 AM"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "A7",
+      "question": "What happens after probation?",
+      "tag": "HR",
+      "expected_concepts": ["confirmation", "permanent"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "A8",
+      "question": "What is bereavement leave?",
+      "tag": "HR",
+      "expected_concepts": ["5 days", "death", "family"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "A9",
+      "question": "What is the payroll cycle?",
+      "tag": "HR",
+      "expected_concepts": ["monthly", "salary"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "A10",
+      "question": "What happens during exit and offboarding?",
+      "tag": "HR",
+      "expected_concepts": ["exit interview", "assets", "handover"],
+      "forbidden_concepts": ["intellectual property clause", "non-compete enforcement"]
+    }
+  ],
+  "group_b": [
+    {
+      "id": "B1",
+      "question": "What is a legal hold?",
+      "tag": "Legal",
+      "expected_concepts": ["preserve", "records", "litigation", "hold"],
+      "forbidden_concepts": ["annual leave", "performance bonus"]
+    },
+    {
+      "id": "B2",
+      "question": "Who is allowed to sign contracts?",
+      "tag": "Legal",
+      "expected_concepts": ["authorized", "signatories", "CEO", "CFO"],
+      "forbidden_concepts": ["team lead", "intern"]
+    },
+    {
+      "id": "B3",
+      "question": "What happens if someone violates an NDA?",
+      "tag": "Legal",
+      "expected_concepts": ["breach", "termination", "legal action"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "B4",
+      "question": "How should legal disputes be handled?",
+      "tag": "Legal",
+      "expected_concepts": ["legal department", "counsel", "notify"],
+      "forbidden_concepts": ["HR manager"]
+    },
+    {
+      "id": "B5",
+      "question": "What is document retention?",
+      "tag": "Legal",
+      "expected_concepts": ["7 years", "retention policy", "store"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "B6",
+      "question": "What happens if records are destroyed under a legal hold?",
+      "tag": "Legal",
+      "expected_concepts": ["violation", "penalty", "severe"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "B7",
+      "question": "Who handles lawsuits?",
+      "tag": "Legal",
+      "expected_concepts": ["Legal Department", "General Counsel"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "B8",
+      "question": "How do you report legal violations?",
+      "tag": "Legal",
+      "expected_concepts": ["compliance officer", "legal team", "report"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "B9",
+      "question": "What are whistleblower protections?",
+      "tag": "Legal",
+      "expected_concepts": ["retaliation", "anonymous", "protect"],
+      "forbidden_concepts": []
+    },
+    {
+      "id": "B10",
+      "question": "What happens to intellectual property after leaving the company?",
+      "tag": "Legal",
+      "expected_concepts": ["remain with company", "proprietary", "return"],
+      "forbidden_concepts": []
+    }
+  ],
+  "group_c": [
+    {
+      "id": "C1_HR",
+      "question": "What happens when I leave the company?",
+      "tag": "HR",
+      "expected_concepts": ["notice period", "final settlement", "exit interview"],
+      "forbidden_concepts": ["litigation hold", "signing authority"]
+    },
+    {
+      "id": "C1_LEGAL",
+      "question": "What happens when I leave the company?",
+      "tag": "Legal",
+      "expected_concepts": ["intellectual property", "confidentiality", "NDA"],
+      "forbidden_concepts": ["final settlement", "paternity leave"]
+    },
+    {
+      "id": "C2_HR",
+      "question": "Confidential information",
+      "tag": "HR",
+      "expected_concepts": ["employee data", "privacy", "personal info"],
+      "forbidden_concepts": ["trade secrets", "patent"]
+    },
+    {
+      "id": "C2_LEGAL",
+      "question": "Confidential information",
+      "tag": "Legal",
+      "expected_concepts": ["trade secrets", "NDA", "proprietary"],
+      "forbidden_concepts": ["salary slip"]
+    },
+    {
+      "id": "C3_HR",
+      "question": "Agreements",
+      "tag": "HR",
+      "expected_concepts": ["employment contract", "offer letter"],
+      "forbidden_concepts": ["vendor agreement", "MSA"]
+    },
+    {
+      "id": "C3_LEGAL",
+      "question": "Agreements",
+      "tag": "Legal",
+      "expected_concepts": ["commercial contract", "NDA", "vendor"],
+      "forbidden_concepts": ["probation letter"]
+    },
+    {
+      "id": "C4_HR",
+      "question": "Disciplinary actions",
+      "tag": "HR",
+      "expected_concepts": ["warning", "PIP", "misconduct"],
+      "forbidden_concepts": ["breach of contract suit"]
+    },
+    {
+      "id": "C4_LEGAL",
+      "question": "Disciplinary actions",
+      "tag": "Legal",
+      "expected_concepts": ["legal violation", "compliance", "fraud"],
+      "forbidden_concepts": ["tardiness"]
+    },
+    {
+      "id": "C5_HR",
+      "question": "Data misuse",
+      "tag": "HR",
+      "expected_concepts": ["IT policy", "access rights"],
+      "forbidden_concepts": ["GDPR fine", "regulatory penalty"]
+    },
+    {
+      "id": "C5_LEGAL",
+      "question": "Data misuse",
+      "tag": "Legal",
+      "expected_concepts": ["liability", "breach notification", "lawsuit"],
+      "forbidden_concepts": ["internet usage policy"]
+    }
+  ],
+  "group_d": [
+    {
+      "id": "D1",
+      "question": "What stock options do employees get?",
+      "tags": ["HR", "Legal"],
+      "must_refuse": true
+    },
+    {
+      "id": "D2",
+      "question": "Who is the CEO?",
+      "tags": ["HR", "Legal"],
+      "must_refuse": true
+    },
+    {
+      "id": "D3",
+      "question": "What is the company’s revenue?",
+      "tags": ["HR", "Legal"],
+      "must_refuse": true
+    },
+    {
+      "id": "D4",
+      "question": "What cloud provider does Aurora use?",
+      "tags": ["HR", "Legal"],
+      "must_refuse": true
+    },
+    {
+      "id": "D5",
+      "question": "What programming languages does the company use?",
+      "tags": ["HR", "Legal"],
+      "must_refuse": true
+    }
+  ]
+}

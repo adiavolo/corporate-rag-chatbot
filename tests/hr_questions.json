@@ -1,0 +1,202 @@
+[
+  {
+    "id": "A1",
+    "question": "What are the standard working hours at Aurora Systems?",
+    "expected_pages": [6],
+    "must_include": ["Monday", "Friday", "9:00 AM", "6:00 PM"]
+  },
+  {
+    "id": "A2",
+    "question": "How many days of annual leave does a full-time employee receive per year?",
+    "expected_pages": [7],
+    "must_include": ["24 days"]
+  },
+  {
+    "id": "A3",
+    "question": "What is the probation period for new full-time employees?",
+    "expected_pages": [4],
+    "must_include": ["three", "months"]
+  },
+  {
+    "id": "A4",
+    "question": "What is the notice period for a confirmed employee who resigns?",
+    "expected_pages": [5],
+    "must_include": ["30 days"]
+  },
+  {
+    "id": "A5",
+    "question": "How many days of paternity leave are provided?",
+    "expected_pages": [8],
+    "must_include": ["10", "days"]
+  },
+  {
+    "id": "A6",
+    "question": "What is the carry-forward limit for unused annual leave?",
+    "expected_pages": [7],
+    "must_include": ["12 days"]
+  },
+  {
+    "id": "A7",
+    "question": "How many days of bereavement leave are allowed?",
+    "expected_pages": [8],
+    "must_include": ["5", "days"]
+  },
+  {
+    "id": "A8",
+    "question": "How often are salaries paid?",
+    "expected_pages": [10],
+    "must_include": ["monthly"]
+  },
+  {
+    "id": "A9",
+    "question": "Who approves leave requests?",
+    "expected_pages": [9],
+    "must_include": ["reporting manager", "HR"]
+  },
+  {
+    "id": "A10",
+    "question": "Where must employees record their working hours?",
+    "expected_pages": [7],
+    "must_include": ["timesheets"]
+  },
+  {
+    "id": "B1",
+    "question": "How does annual leave accrue and what happens if I don’t use all of it?",
+    "expected_pages": [7],
+    "must_include": ["2 days per month", "12 days", "forfeited"]
+  },
+  {
+    "id": "B2",
+    "question": "What steps are required to get permanent confirmation after probation?",
+    "expected_pages": [4],
+    "must_include": ["manager", "HR", "written confirmation"]
+  },
+  {
+    "id": "B3",
+    "question": "What actions can lead to disciplinary measures?",
+    "expected_pages": [12],
+    "must_include": ["violations", "warnings", "termination"]
+  },
+  {
+    "id": "B4",
+    "question": "What must employees do before taking leave?",
+    "expected_pages": [9],
+    "must_include": ["HR system", "approval", "manager"]
+  },
+  {
+    "id": "B5",
+    "question": "What factors affect performance bonuses?",
+    "expected_pages": [10],
+    "must_include": ["individual", "team", "company"]
+  },
+  {
+    "id": "B6",
+    "question": "What are the conditions for unpaid leave?",
+    "expected_pages": [9],
+    "must_include": ["approval", "salary", "benefits"]
+  },
+  {
+    "id": "B7",
+    "question": "What behavior is considered a conflict of interest?",
+    "expected_pages": [12],
+    "must_include": ["competitors", "financial"]
+  },
+  {
+    "id": "B8",
+    "question": "What happens if someone repeatedly arrives late?",
+    "expected_pages": [7],
+    "must_include": ["disciplinary", "HR review"]
+  },
+  {
+    "id": "B9",
+    "question": "What are the responsibilities of employees regarding data security?",
+    "expected_pages": [13, 14],
+    "must_include": ["confidential", "password", "systems"]
+  },
+  {
+    "id": "B10",
+    "question": "What steps are taken when an employee resigns?",
+    "expected_pages": [20],
+    "must_include": ["notice", "exit interview", "asset"]
+  },
+  {
+    "id": "C1",
+    "question": "Am I eligible for maternity leave if this is my third child?",
+    "expected_pages": [8],
+    "must_refuse": true
+  },
+  {
+    "id": "C2",
+    "question": "Can sick leave be converted into cash?",
+    "expected_pages": [8],
+    "must_include": ["cannot", "encashed"]
+  },
+  {
+    "id": "C3",
+    "question": "Does unpaid leave count toward my service tenure?",
+    "expected_pages": [9],
+    "must_include": ["does not count"]
+  },
+  {
+    "id": "C4",
+    "question": "Can interns receive performance bonuses?",
+    "expected_pages": [10],
+    "must_refuse": true
+  },
+  {
+    "id": "C5",
+    "question": "Can I skip mandatory training?",
+    "expected_pages": [17],
+    "must_include": ["mandatory", "disciplinary"]
+  },
+  {
+    "id": "D1",
+    "question": "What stock options do employees receive?",
+    "must_refuse": true
+  },
+  {
+    "id": "D2",
+    "question": "What is the company’s carbon neutrality policy?",
+    "must_refuse": true
+  },
+  {
+    "id": "D3",
+    "question": "Does Aurora Systems offer daycare services?",
+    "must_refuse": true
+  },
+  {
+    "id": "D4",
+    "question": "What programming languages does the company use?",
+    "must_refuse": true
+  },
+  {
+    "id": "D5",
+    "question": "What is the CEO’s compensation?",
+    "must_refuse": true
+  },
+  {
+    "id": "E1",
+    "question": "How long do I get?",
+    "must_ask_clarification": true
+  },
+  {
+    "id": "E2",
+    "question": "What happens if I leave?",
+    "must_ask_clarification": true
+  },
+  {
+    "id": "E3",
+    "question": "Tell me about benefits.",
+    "must_ask_clarification": true
+  },
+  {
+    "id": "E4",
+    "question": "What are the rules?",
+    "must_ask_clarification": true
+  },
+  {
+    "id": "E5",
+    "question": "How much do I get paid?",
+    "must_ask_clarification": true
+  }
+]

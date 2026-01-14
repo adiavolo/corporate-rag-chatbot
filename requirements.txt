@@ -1,0 +1,36 @@
+# Web Framework
+fastapi>=0.115.2
+uvicorn[standard]
+python-multipart
+
+# Environment & Logging
+python-dotenv
+loguru
+
+# Database
+psycopg2-binary
+sqlalchemy
+pgvector
+
+# Langchain
+langchain
+langchain-postgres
+langchain-community
+
+# ML/AI
+sentence-transformers
+torch --index-url https://download.pytorch.org/whl/cpu
+
+# LLM API
+openai
+
+# PDF Processing
+pypdf
+
+# UI
+gradio>=5.0.0,<6.0.0
+
+# Utilities
+tenacity
+pydantic
+pydantic-settings
