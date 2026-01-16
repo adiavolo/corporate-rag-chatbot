@@ -8,13 +8,13 @@ from urllib.parse import urlparse
 # Add project root to path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from app.config import settings
+from app.core.config import settings
 
 def create_database_if_not_exists():
     """
     Parses DATABASE_URL, connects to default 'postgres' db, and creates the target database if it doesn't exist.
     """
-    url = urlparse(settings.DATABASE_URL)
+    url = urlparse(settings.database.url)
     db_name = url.path[1:] # Remove leading slash
     
     # Construct default URL (connect to 'postgres' database)
@@ -55,9 +55,9 @@ def create_database_if_not_exists():
         # Sometimes 'postgres' db is locked or different user permissions.
 
 def init_schema():
-    logger.info(f"Initializing schema for {settings.DATABASE_URL}")
+    logger.info(f"Initializing schema for {settings.database.url}")
     try:
-        engine = create_engine(settings.DATABASE_URL, isolation_level="AUTOCOMMIT")
+        engine = create_engine(settings.database.url, isolation_level="AUTOCOMMIT")
         with engine.connect() as connection:
             # Read SQL file
             # Correct path handling

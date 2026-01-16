@@ -21,7 +21,8 @@ CREATE TABLE IF NOT EXISTS chunks (
     id SERIAL PRIMARY KEY,
     document_id INTEGER REFERENCES documents(id) ON DELETE CASCADE,
     page_number INTEGER NOT NULL,
-    text TEXT NOT NULL
+    text TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
 );
 
 CREATE INDEX IF NOT EXISTS idx_chunks_document_id ON chunks(document_id);

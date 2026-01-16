@@ -3,7 +3,7 @@ import requests
 import json
 import os
 import time
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 from dotenv import load_dotenv
 
 # Load env
@@ -110,7 +110,7 @@ def chat_function(message, history, tag):
     try:
         response = requests.post(
             f"{API_URL}/chat",
-            json={"query": message, "tag": tag},
+            json={"query": str(message), "tag": tag},
             headers=get_headers()
         )
         
@@ -218,40 +218,37 @@ def check_health():
             def text_color(is_healthy):
                 return "#065f46" if is_healthy else "#991b1b"
 
+            # Calculate IST (UTC+5:30)
+            ist_now = datetime.now(timezone.utc) + timedelta(hours=5, minutes=30)
+            timestamp = ist_now.strftime('%H:%M:%S')
+
             # Create Dashboard HTML
             dashboard = f"""
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
-                <div style="background: {status_color(data['checks']['database'])}; padding: 15px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.05);">
+                <div style="background: {status_color(data['components']['database'])}; padding: 15px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.05);">
                     <div style="font-size: 0.9em; color: #6b7280 !important; font-weight: 600;">Database</div>
-                    <div style="font-size: 1.2em; color: {text_color(data['checks']['database'])} !important; margin-top: 5px;">
-                        {status_badge(data['checks']['database'])}
+                    <div style="font-size: 1.2em; color: {text_color(data['components']['database'])} !important; margin-top: 5px;">
+                        {status_badge(data['components']['database'])}
                     </div>
                 </div>
                 
-                <div style="background: {status_color(data['checks']['pgvector'])}; padding: 15px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.05);">
+                <div style="background: {status_color(data['components']['pgvector'])}; padding: 15px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.05);">
                      <div style="font-size: 0.9em; color: #6b7280 !important; font-weight: 600;">PGVector</div>
-                    <div style="font-size: 1.2em; color: {text_color(data['checks']['pgvector'])} !important; margin-top: 5px;">
-                        {status_badge(data['checks']['pgvector'])}
-                    </div>
-                </div>
-
-                <div style="background: {status_color(data['checks']['embedding_model'])}; padding: 15px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.05);">
-                     <div style="font-size: 0.9em; color: #6b7280 !important; font-weight: 600;">Embedding Model</div>
-                    <div style="font-size: 1.2em; color: {text_color(data['checks']['embedding_model'])} !important; margin-top: 5px;">
-                         {status_badge(data['checks']['embedding_model'])}
+                    <div style="font-size: 1.2em; color: {text_color(data['components']['pgvector'])} !important; margin-top: 5px;">
+                        {status_badge(data['components']['pgvector'])}
                     </div>
                 </div>
                 
-                <div style="background: {status_color(data['checks']['openrouter'])}; padding: 15px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.05);">
-                     <div style="font-size: 0.9em; color: #6b7280 !important; font-weight: 600;">OpenRouter API</div>
-                    <div style="font-size: 1.2em; color: {text_color(data['checks']['openrouter'])} !important; margin-top: 5px;">
-                         {status_badge(data['checks']['openrouter'])}
+                <div style="background: {status_color(data['components'].get('llm', data['components'].get('openrouter')) )}; padding: 15px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.05);">
+                     <div style="font-size: 0.9em; color: #6b7280 !important; font-weight: 600;">LLM API</div>
+                    <div style="font-size: 1.2em; color: {text_color(data['components'].get('llm', data['components'].get('openrouter')) )} !important; margin-top: 5px;">
+                         {status_badge(data['components'].get('llm', data['components'].get('openrouter')) )}
                     </div>
                 </div>
             </div>
             
             <div style="margin-top: 20px; text-align: right; color: #9ca3af; font-size: 0.85em;">
-                Latency: {duration:.0f}ms • Last Updated: {datetime.now().strftime('%H:%M:%S')}
+                Latency: {duration:.0f}ms • Last Updated: {timestamp} (IST)
             </div>
             """
             return dashboard
